@@ -1,0 +1,220 @@
+{
+  "theme": {
+    "primary_archetype": "5 (Luxury / Spiritual Reverence)",
+    "color_mode": "dark",
+    "description": "Premium Islamic design focusing on reverence, clarity, and elegance."
+  },
+  "colors": {
+    "light": {
+      "background": "#F8F9FA",
+      "surface": "#FFFFFF",
+      "primary": "#04473C",
+      "primary_light": "#0B7A66",
+      "secondary": "#D4AF37",
+      "accent": "#FFD700",
+      "text_primary": "#0A0E0D",
+      "text_secondary": "#4A5568",
+      "border": "#E2E8F0",
+      "success": "#10B981",
+      "error": "#EF4444"
+    },
+    "dark": {
+      "background": "#080C0B",
+      "surface": "#121A18",
+      "primary": "#065F50",
+      "primary_light": "#088A75",
+      "secondary": "#D4AF37",
+      "accent": "#FFD700",
+      "text_primary": "#F8F9FA",
+      "text_secondary": "#A0AEC0",
+      "border": "#1E2A27",
+      "success": "#34D399",
+      "error": "#F87171"
+    }
+  },
+  "typography": {
+    "english_primary": "Poppins",
+    "arabic_primary": "Amiri",
+    "arabic_secondary": "Scheherazade New",
+    "urdu_primary": "Cairo",
+    "scale": {
+      "h1_arabic": { "fontSize": 48, "lineHeight": 64, "fontFamily": "Amiri" },
+      "h2_arabic": { "fontSize": 36, "lineHeight": 48, "fontFamily": "Amiri" },
+      "h1_english": { "fontSize": 32, "lineHeight": 40, "fontFamily": "Poppins", "fontWeight": "700" },
+      "h2_english": { "fontSize": 24, "lineHeight": 32, "fontFamily": "Poppins", "fontWeight": "600" },
+      "h3": { "fontSize": 20, "lineHeight": 28, "fontFamily": "Poppins", "fontWeight": "600" },
+      "body_large_arabic": { "fontSize": 24, "lineHeight": 40, "fontFamily": "Amiri" },
+      "body_english": { "fontSize": 16, "lineHeight": 24, "fontFamily": "Poppins", "fontWeight": "400" },
+      "caption": { "fontSize": 12, "lineHeight": 16, "fontFamily": "Poppins", "fontWeight": "400" }
+    }
+  },
+  "spacing": {
+    "xs": 4,
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "xl": 32,
+    "xxl": 48,
+    "xxxl": 64
+  },
+  "border_radius": {
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "xl": 32,
+    "full": 9999
+  },
+  "shadows_and_glows": {
+    "glow_primary": {
+      "shadowColor": "#065F50",
+      "shadowOffset": { "width": 0, "height": 0 },
+      "shadowOpacity": 0.8,
+      "shadowRadius": 15,
+      "elevation": 10
+    },
+    "glow_gold": {
+      "shadowColor": "#D4AF37",
+      "shadowOffset": { "width": 0, "height": 0 },
+      "shadowOpacity": 0.6,
+      "shadowRadius": 20,
+      "elevation": 12
+    },
+    "card_shadow": {
+      "shadowColor": "#000",
+      "shadowOffset": { "width": 0, "height": 4 },
+      "shadowOpacity": 0.1,
+      "shadowRadius": 12,
+      "elevation": 5
+    }
+  },
+  "media": {
+    "splash_background": "https://static.prod-images.emergentagent.com/jobs/651a071c-ec54-4ee2-af82-5777dfaea6ac/images/d116753c0a8f60e8035abde9508ea24084a0c01657738d9bbff680a90b4888f4.png",
+    "hero_card_bg": "https://static.prod-images.emergentagent.com/jobs/651a071c-ec54-4ee2-af82-5777dfaea6ac/images/382514d99a3cdf80a99414c31a230be1b4abceac25fdf23b868c85c4039ca331.png"
+  },
+  "arabic_text_rendering_rules": {
+    "direction": "RTL for Arabic/Urdu, LTR for English",
+    "line_height_multiplier": 1.6,
+    "padding_vertical": 8,
+    "alignment": "right-aligned by default for Arabic/Urdu, center for large Takbeer"
+  },
+  "components": {
+    "Card": {
+      "background": "surface",
+      "borderRadius": "lg",
+      "padding": "lg",
+      "shadow": "card_shadow",
+      "border": "1px solid border"
+    },
+    "ActionButton": {
+      "background": "primary",
+      "borderRadius": "full",
+      "padding": "md",
+      "textStyle": "body_english",
+      "fontWeight": "600",
+      "textColor": "#FFFFFF"
+    },
+    "TakbeerCounterButton": {
+      "background": "transparent",
+      "borderColor": "secondary",
+      "borderWidth": 2,
+      "borderRadius": "full",
+      "size": 200,
+      "glow": "glow_gold"
+    },
+    "BottomTab": {
+      "background": "#080C0B",
+      "activeTintColor": "#D4AF37",
+      "inactiveTintColor": "#4A5568",
+      "borderTopColor": "#1E2A27"
+    }
+  },
+  "screens": {
+    "Splash": {
+      "layout": "Center aligned, full screen image background",
+      "background_image": "splash_background",
+      "elements": [
+        "Crescent moon animation (fade in and scale up)",
+        "App Title: 'HB Eid ul Adha' (Gold color, Amiri font)",
+        "Tagline: 'Authentic Sunnah & Qurbani Guide'",
+        "Footer: 'Powered by HB' (bottom center, subtle fade)"
+      ]
+    },
+    "Home": {
+      "layout": "ScrollView with generous padding-top for header",
+      "header": "Greeting + Today's Hijri Date (Right aligned for RTL/Arabic)",
+      "sections": [
+        {
+          "name": "Eid Countdown",
+          "style": "Glassmorphic hero card using hero_card_bg image, glowing gold numbers"
+        },
+        {
+          "name": "Quick Access Grid",
+          "layout": "2 columns, gap-md",
+          "items": ["Sunnah", "Qurbani Guide", "Takbeer", "Duain", "Prayer Times", "Qibla", "Tasbeeh", "Hajj Guide"]
+        },
+        {
+          "name": "Daily Highlights",
+          "layout": "Horizontal scroll or stacked cards (Hadith of the Day, Daily Dua)"
+        }
+      ]
+    },
+    "Sunnah": {
+      "layout": "List view, card-based",
+      "item_structure": [
+        "Header: Arabic text (Amiri)",
+        "Sub-header: Urdu / English translation (Poppins/Cairo)",
+        "Footer: Hadith Reference (caption style)"
+      ],
+      "data": ["Ghusl", "Miswak", "Ache kapray", "Itr", "Eidgah jana", "Takbeer", "Qurbani adaab"]
+    },
+    "QurbaniGuide": {
+      "layout": "Tabbed view or segmented control",
+      "tabs": ["Rules", "Animal Conditions", "Sunnah Method", "Duas"]
+    },
+    "Takbeer": {
+      "layout": "Centered layout focusing on the main counter",
+      "elements": [
+        "Top: Takbeer-e-Tashreeq full Arabic text (Amiri, text-3xl, centered)",
+        "Middle: Giant circular tap area with 'glow_gold', showing current count",
+        "Bottom: Reset button (minimal, text_secondary color)"
+      ]
+    },
+    "Duain": {
+      "layout": "Categorized Accordion or Grid",
+      "categories": ["Eid Duas", "Qurbani Dua", "Morning Azkar", "Evening Azkar", "Eating", "Traveling"],
+      "detail_view": "Large Arabic text -> Urdu translation -> English translation -> Favorite/Share actions"
+    },
+    "PrayerTimes": {
+      "layout": "Vertical list of 5 prayers + Sunrise",
+      "style": "Highlight current prayer with 'glow_primary' background"
+    },
+    "Qibla": {
+      "layout": "Compass UI in center",
+      "elements": ["Gold animated arrow", "Kaaba icon at destination angle", "Degrees text"]
+    },
+    "Tasbeeh": {
+      "layout": "Clean interface similar to Takbeer screen",
+      "elements": ["Count display", "Tap target", "Reset", "Target input"]
+    },
+    "Settings": {
+      "layout": "Standard list",
+      "options": ["Language (Urdu/English/Arabic)", "Theme (Light/Dark)", "About HB", "Share App"]
+    }
+  },
+  "testing": {
+    "attribute": "data-testid",
+    "react_native_attribute": "testID",
+    "rules": "All interactive and key informational elements MUST include a data-testid/testID attribute to facilitate robust automated testing."
+  },
+  "instructions_to_main_agent": [
+    "Use standard React Native StyleSheet objects. Provide .js guidelines as requested.",
+    "MUST apply testID (React Native equivalent of data-testid) to all interactive elements (buttons, inputs, tabs).",
+    "Implement internationalization (i18n) from the start with RTL awareness for Arabic and Urdu text directions.",
+    "Use `react-native-reanimated` for smooth animations (Splash screen crescent moon fade-in, Takbeer button glow effects).",
+    "Apply `media.hero_card_bg` as the background for the Eid Countdown widget utilizing React Native's ImageBackground component.",
+    "Apply `media.splash_background` for the full-screen Splash view.",
+    "All header text MUST use the specified Arabic (Amiri/Scheherazade) or English (Poppins) fonts. Ensure they are dynamically loaded.",
+    "For the bottom tab navigator, utilize the deep emerald background with gold active icon tint matching the 'BottomTab' component specs.",
+    "Always ensure high contrast (WCAG AA). When overlaying text on images, use soft dark textShadow properties to enhance readability."
+  ]
+}
