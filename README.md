@@ -1,44 +1,46 @@
-# HB-EID-APP 🚀
+<div align="center">
 
-A modern full-stack application built with **React/Expo** frontend and **FastAPI** backend, professionally deployed using **Vercel** and **Render**.
+# 🚀 HB-EID-APP
 
----
+### Modern Full-Stack Web Application
 
-# 🌐 Live Demo
+<img src="https://img.shields.io/badge/Frontend-React%20%7C%20Expo-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Backend-FastAPI-green?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Database-MongoDB-brightgreen?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Deployment-Vercel%20%7C%20Render-black?style=for-the-badge" />
 
-### Frontend (Vercel)
+<br/>
 
+🌐 **Live Demo**
 [https://hb-eid-app.vercel.app](https://hb-eid-app.vercel.app)
 
-### Backend API (Render)
-
+⚡ **Backend API**
 [https://hb-eid-app.onrender.com](https://hb-eid-app.onrender.com)
 
-### GitHub Repository
-
-[https://github.com/Baqirsultan201/HB-EID-APP](https://github.com/Baqirsultan201/HB-EID-APP)
+</div>
 
 ---
 
-# 📌 Project Overview
+# ✨ Overview
 
-HB-EID-APP is a modern full-stack web/mobile application designed with scalable architecture and clean deployment workflows.
-
-The project includes:
-
-* ⚡ Fast and responsive frontend
-* 🔥 Powerful FastAPI backend
-* 🌍 REST API integration
-* ☁️ Cloud deployment
-* 🔐 Environment variable support
-* 📦 GitHub version control
-* 🚀 Production-ready deployment
+HB-EID-APP is a modern full-stack application built using powerful frontend and backend technologies.
+The project is designed with scalable architecture, fast API communication, cloud deployment, and responsive UI.
 
 ---
 
-# 🛠️ Tech Stack
+# 🖼️ Preview
 
-## Frontend
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:2563eb&height=200&section=header&text=HB-EID-APP&fontSize=40&fontColor=ffffff&animation=fadeIn" />
+
+</div>
+
+---
+
+# ⚙️ Tech Stack
+
+## 🎨 Frontend
 
 * React
 * Expo
@@ -46,24 +48,23 @@ The project includes:
 * Node.js
 * npm
 
-## Backend
+## ⚡ Backend
 
 * Python
 * FastAPI
 * Uvicorn
-* REST APIs
 
-## Database
+## 🗄️ Database
 
 * MongoDB
 * PyMongo
 * Motor
 
-## Deployment
+## ☁️ Deployment
 
-* Vercel (Frontend)
-* Render (Backend)
-* GitHub (Version Control)
+* Vercel
+* Render
+* GitHub
 
 ---
 
@@ -72,37 +73,26 @@ The project includes:
 ```bash
 HB-EID-APP/
 │
-├── frontend/          # React / Expo frontend
-├── backend/           # FastAPI backend
-├── tests/             # API tests
-├── requirements.txt   # Python dependencies
-├── package.json
-└── README.md
+├── frontend/
+│   ├── assets/
+│   ├── components/
+│   ├── screens/
+│   └── .env
+│
+├── backend/
+│   ├── tests/
+│   ├── server.py
+│   └── requirements.txt
+│
+├── README.md
+└── package.json
 ```
 
 ---
 
-# ⚙️ Environment Variables
+# 🚀 Installation
 
-## Frontend `.env`
-
-```env
-EXPO_PUBLIC_BACKEND_URL=https://hb-eid-app.onrender.com
-```
-
-## Backend Environment Variables
-
-```env
-MONGO_URL=your_mongodb_url
-DB_NAME=hb_eid_app
-SECRET_KEY=your_secret_key
-```
-
----
-
-# 🚀 Installation Guide
-
-# 1️⃣ Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/Baqirsultan201/HB-EID-APP.git
@@ -111,7 +101,7 @@ cd HB-EID-APP
 
 ---
 
-# 2️⃣ Frontend Setup
+# 💻 Frontend Setup
 
 ```bash
 cd frontend
@@ -121,7 +111,7 @@ npx expo start
 
 ---
 
-# 3️⃣ Backend Setup
+# ⚙️ Backend Setup
 
 ```bash
 cd backend
@@ -131,49 +121,54 @@ uvicorn server:app --reload
 
 ---
 
+# 🔑 Environment Variables
+
+## Frontend `.env`
+
+```env
+EXPO_PUBLIC_BACKEND_URL=https://hb-eid-app.onrender.com
+```
+
+---
+
 # 🌍 Deployment
 
-## Frontend Deployment
+## Frontend
 
-Hosted on:
+✅ Vercel
 
-* Vercel
+## Backend
 
-## Backend Deployment
-
-Hosted on:
-
-* Render
+✅ Render
 
 ---
 
 # 🔥 Features
 
-* Full-stack architecture
-* REST API integration
-* Cloud deployment
-* Environment configuration
-* Responsive UI
-* GitHub integration
-* Production-ready setup
-* Scalable backend
-* Fast performance
+✨ Responsive UI
+⚡ Fast API Integration
+🔐 Environment Variable Support
+☁️ Cloud Deployment
+📦 GitHub Version Control
+🚀 Production Ready Setup
+📱 Mobile Friendly
+🌐 Live Deployment
 
 ---
 
-# 📡 API Integration
+# 📡 API Example
 
-Frontend communicates with backend using:
+```javascript
+const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL;
 
-```js
-process.env.EXPO_PUBLIC_BACKEND_URL
+fetch(`${API_URL}/api/data`)
+  .then((res) => res.json())
+  .then((data) => console.log(data));
 ```
 
 ---
 
 # 🧪 Testing
-
-Run backend tests:
 
 ```bash
 pytest
@@ -181,34 +176,12 @@ pytest
 
 ---
 
-# 📦 Build Commands
-
-## Frontend Build
-
-```bash
-npx expo export
-```
-
-## Backend Start
-
-```bash
-uvicorn server:app --host 0.0.0.0 --port 10000
-```
-
----
-
 # 👨‍💻 Developer
 
-### Baqir Sultan
+## Baqir Sultan
 
-GitHub:
+🔗 GitHub
 [https://github.com/Baqirsultan201](https://github.com/Baqirsultan201)
-
----
-
-# 📜 License
-
-This project is licensed under the MIT License.
 
 ---
 
@@ -218,12 +191,10 @@ If you like this project, give it a ⭐ on GitHub.
 
 ---
 
-# 🚀 Production Links
+<div align="center">
 
-### Live Frontend
+### 🚀 Built with Passion & Modern Technologies
 
-[https://hb-eid-app.vercel.app](https://hb-eid-app.vercel.app)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563eb,100:0f172a&height=120&section=footer" />
 
-### Live Backend
-
-[https://hb-eid-app.onrender.com](https://hb-eid-app.onrender.com)
+</div>
